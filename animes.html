@@ -21,10 +21,24 @@
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
 </head><!--/head-->
 
 <body>
+	 <!-- início do preloader -->
+	 <div id="preloader">
+        <div class="inner">
+           <!-- HTML DA ANIMAÇÃO MUITO LOUCA DO SEU PRELOADER! -->
+           <div class="bolas">
+              <div></div>
+              <div></div>
+              <div></div>                    
+           </div>
+        </div>
+    </div>
+	<!-- fim do preloader --> 
+	
+	<div class="load"></div>
 	<header id="header"><!--header-->
 		<div class="header_top"><!--header_top-->
 			<div class="container">
@@ -404,6 +418,17 @@
 	<script src="js/jquery.scrollUp.min.js"></script>
 	<script src="js/price-range.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
-    <script src="js/main.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+		//<![CDATA[
+		$(window).on('load', function () {
+		$('#preloader .inner').fadeOut();
+		$('#preloader').delay(350).fadeOut('slow'); 
+		$('body').delay(350).css({'overflow': 'visible'});
+		})
+		//]]>
+	</script>
+	
+
 </body>
 </html>
