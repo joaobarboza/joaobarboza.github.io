@@ -25,6 +25,19 @@
 </head><!--/head-->
 
 <body>
+	 <!-- início do preloader -->
+	 <div id="preloader">
+        <div class="inner">
+           <!-- HTML DA ANIMAÇÃO MUITO LOUCA DO SEU PRELOADER! -->
+           <div class="bolas">
+              <div></div>
+              <div></div>
+              <div></div>                    
+           </div>
+        </div>
+    </div>
+	<!-- fim do preloader --> 
+	
     <header id="header"><!--header-->
 		<div class="header_top"><!--header_top-->
 			<div class="container">
@@ -116,7 +129,7 @@
 								<div class="col-sm-6">
 									<h1>SUSTENTABILIDADE</h1>
 									<h2></h2>
-									<p> Todo o processo de fabricação e materiais utilizados são pensados para a reduzir do impacto ambiental. </p>
+									<p> Todo o 	de fabricação e materiais utilizados são pensados para a reduzir do impacto ambiental. </p>
 									<button type="button" class="btn btn-default get"><a href="diferenciais.html">Veja como</a></button>
 								</div>
 								<div class="col-sm-6">
@@ -179,6 +192,15 @@
     <script src="js/jquery.scrollUp.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
-    <script src="js/main.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+		//<![CDATA[
+		$(window).on('load', function () {
+		$('#preloader .inner').fadeOut();
+		$('#preloader').delay(350).fadeOut('slow'); 
+		$('body').delay(350).css({'overflow': 'visible'});
+		})
+		//]]>
+	</script>
 </body>
 </html>
