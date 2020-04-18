@@ -75,16 +75,14 @@ a#scrollUp i {
 
 .contactinfo ul li:first-child {
     margin-left: -15px;
+    margin-top: 8px;
+    color: #CEFF24;
 }
 
 .contactinfo ul li a {
     font-size: 12px;
-    color: #696763;
+    color: #CEFF24;
     font-family: 'Roboto', sans-serif;
-}
-
-.contactinfo ul li a:hover {
-    background: inherit;
 }
 
 .social-icons ul li a {
@@ -107,7 +105,7 @@ a#scrollUp i {
 }
 
 .social-icons ul li a i:hover {
-    color: #fff;
+    color: #CEFF24;
     transition: all 0.9s ease 0s;
     -moz-transition: all 0.9s ease 0s;
     -webkit-transition: all 0.9s ease 0s;
@@ -250,23 +248,6 @@ a#scrollUp i {
     background: none;
     color: #fdb45e;
 }
-
-.search_box input {
-    background: #F0F0E9;
-    border: medium none;
-    color: #B2B2B2;
-    font-family: 'roboto';
-    font-size: 12px;
-    font-weight: 300;
-    height: 35px;
-    outline: medium none;
-    padding-left: 10px;
-    width: 155px;
-    background-image: url(../images/home/searchicon.png);
-    background-repeat: no-repeat;
-    background-position: 130px;
-}
-
 
 /*  Dropdown menu*/
 
