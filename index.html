@@ -25,19 +25,9 @@
 </head><!--/head-->
 
 <body>
-	 <!-- início do preloader -->
-	 <div id="preloader">
-        <div class="inner">
-           <!-- HTML DA ANIMAÇÃO MUITO LOUCA DO SEU PRELOADER! -->
-           <div class="bolas">
-              <div></div>
-              <div></div>
-              <div></div>                    
-           </div>
-        </div>
-    </div>
-	<!-- fim do preloader --> 
-	
+	 <div id="loader"></div>
+		<div id="content">			
+		</div>
 	<header id="header"><!--header-->
 		<div class="header_top"><!--header_top-->
 			<div class="container">
@@ -417,15 +407,10 @@
 	<script src="js/jquery.scrollUp.min.js"></script>
 	<script src="js/price-range.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
-	<script src="js/main.js"></script>
-	<script>
-		//<![CDATA[
-		$(window).on('load', function () {
-		$('#preloader .inner').fadeOut();
-		$('#preloader').delay(350).fadeOut('slow'); 
-		$('body').delay(350).css({'overflow': 'visible'});
-		})
-		//]]>
-	</script>
+	<script type="text/javascript">
+			jQuery(window).on('load', function(){
+				jQuery("#loader").delay(1500).fadeOut("slow");
+			});
+		</script>
 </body>
 </html>
