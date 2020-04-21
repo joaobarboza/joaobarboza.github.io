@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>ANIMES | PLAction</title>
+	<title>ANIMES | PLAction</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/prettyPhoto.css" rel="stylesheet">
@@ -25,19 +26,8 @@
 </head><!--/head-->
 
 <body>
-	 <!-- início do preloader -->
-	 <div id="preloader">
-        <div class="inner">
-           <!-- HTML DA ANIMAÇÃO MUITO LOUCA DO SEU PRELOADER! -->
-           <div class="bolas">
-              <div></div>
-              <div></div>
-              <div></div>                    
-           </div>
-        </div>
-    </div>
-	<!-- fim do preloader --> 
-	
+	<div id="loader"></div>
+	<div id="scroll"></div>
 	<div class="load"></div>
 	<header id="header"><!--header-->
 		<div class="header_top"><!--header_top-->
@@ -221,16 +211,16 @@
 							<div class="product-image-wrapper">
 								<div class="single-products">
 										<div class="productinfo text-center">
-											<img src="images/home/gallery1.jpg" alt="" />
-											<h2>R$200,00</h2>
-											<p>Goku Clássico</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
+											<img src="images/animes/anime1.png" alt="" />
+											<h2>R$259,90</h2>
+											<p>ED FULLMETAL</p>
+											<a href="fimcurso.html" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 										</div>
 										<div class="product-overlay">
 											<div class="overlay-content">
-												<h2>R$200,00</h2>
-												<p>Goku Clássico</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
+												<h2>R$259,90</h2>
+												<p>ED FULLMETAL</p>
+												<a href="fimcurso.html" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 											</div>
 										</div>
 								</div>								
@@ -240,16 +230,16 @@
 							<div class="product-image-wrapper">
 								<div class="single-products">
 										<div class="productinfo text-center">
-											<img src="images/home/gallery1.jpg" alt="" />
-											<h2>R$200,00</h2>
-											<p>Goku Clássico</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
+											<img src="images/animes/anime2.png" alt="" />
+											<h2>R$250,90</h2>
+											<p>MINATO</p>
+											<a href="fimcurso.html" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 										</div>
 										<div class="product-overlay">
 											<div class="overlay-content">
-												<h2>R$200,00</h2>
-												<p>Goku Clássico</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
+												<h2>R$250,90</h2>
+												<p>MINATO</p>
+												<a href="fimcurso.html" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 											</div>
 										</div>
 								</div>								
@@ -259,16 +249,16 @@
 							<div class="product-image-wrapper">
 								<div class="single-products">
 										<div class="productinfo text-center">
-											<img src="images/home/gallery1.jpg" alt="" />
-											<h2>R$200,00</h2>
-											<p>Goku Clássico</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
+											<img src="images/animes/anime3.png" alt="" />
+											<h2>R$379,99</h2>
+											<p>YUGI</p>
+											<a href="fimcurso.html" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 										</div>
 										<div class="product-overlay">
 											<div class="overlay-content">
-												<h2>R$200,00</h2>
-												<p>Goku Clássico</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
+												<h2>R$379,99</h2>
+												<p>YUGI</p>
+												<a href="fimcurso.html" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 											</div>
 										</div>
 								</div>								
@@ -278,16 +268,16 @@
 							<div class="product-image-wrapper">
 								<div class="single-products">
 										<div class="productinfo text-center">
-											<img src="images/home/gallery1.jpg" alt="" />
-											<h2>R$00,00</h2>
-											<p>Sou um Produto</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
+											<img src="images/animes/anime4.png" alt="" />
+											<h2>R$125,00</h2>
+											<p>L. DEATH NOTE</p>
+											<a href="fimcurso.html" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 										</div>
 										<div class="product-overlay">
-											<div class="overlay-content">
-												<h2>R$00,00</h2>
-												<p>Sou um Produto</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
+											<div class="overlay-content">											
+											<h2>R$125,00</h2>
+											<p>L. DEATH NOTE</p>
+											<a href="fimcurso.html" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 											</div>
 										</div>
 								</div>								
@@ -297,17 +287,17 @@
 							<div class="product-image-wrapper">
 								<div class="single-products">
 									<div class="productinfo text-center">
-										<img src="images/home/gallery1.jpg" alt="" />
-										<h2>R$00,00</h2>
-										<p>Sou um Produto</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
+										<img src="images/animes/anime5.png" alt="" />
+										<h2>R$289,59</h2>
+										<p>Eren Yeager</p>
+										<a href="fimcurso.html" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 									</div>
-									<div class="product-overlay">
+									<div class="product-overlay">										
 										<div class="overlay-content">
-											<h2>R$00,00</h2>
-											<p>Sou um Produto</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
-										</div>
+											<h2>R$289,59</h2>
+											<p>Eren Yeager</p>
+											<a href="fimcurso.html" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>										
+										</div>										
 									</div>
 								</div>
 								
@@ -317,39 +307,37 @@
 							<div class="product-image-wrapper">
 								<div class="single-products">
 									<div class="productinfo text-center">
-										<img src="images/home/gallery1.jpg" alt="" />
-										<h2>R$00,00</h2>
-										<p>Sou um Produto</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
+										<img src="images/animes/anime6.png" alt="" />
+										<h2>R$327,99</h2>
+										<p>ICHIGO</p>
+										<a href="fimcurso.html" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content">
-											<h2>R$00,00</h2>
-											<p>Sou um Produto</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
+											<h2>R$327,99</h2>
+											<p>ICHIGO</p>
+											<a href="fimcurso.html" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 										</div>
 									</div>
-								</div>
-								
+								</div>								  
 							</div>
 						</div>
 						<div class="col-sm-4">
 							<div class="product-image-wrapper">
 								<div class="single-products">
 									<div class="productinfo text-center">
-										<img src="images/home/gallery1.jpg" alt="" />
-										<h2>R$00,00</h2>
-										<p>Sou um Produto</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
+										<img src="images/animes/anime7.png" alt="" />
+										<h2>R$179,90</h2>
+										<p>CHIBI ICHIGO</p>
+										<a href="fimcurso.html" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content">
-											<h2>R$00,00</h2>
-											<p>Sou um Produto</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
+											<h2>R$179,90</h2>
+											<p>CHIBI ICHIGO</p>
+											<a href="fimcurso.html" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 										</div>
 									</div>
-									<img src="images/home/new.png" class="new" alt="" />
 								</div>
 							</div>
 						</div>
@@ -357,19 +345,18 @@
 							<div class="product-image-wrapper">
 								<div class="single-products">
 									<div class="productinfo text-center">
-										<img src="images/home/gallery1.jpg" alt="" />
-										<h2>R$00,00</h2>
-										<p>Sou um Produto</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
+										<img src="images/animes/anime8.png" alt="" />
+										<h2>R$286,69</h2>
+										<p>MIKASA</p>
+										<a href="fimcurso.html" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content">
-											<h2>R$00,00</h2>
-											<p>Sou um Produto</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
+											<h2>R$286,69</h2>
+											<p>MIKASA</p>
+											<a href="fimcurso.html" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 										</div>
 									</div>
-									<img src="images/home/sale.png" class="new" alt="" />
 								</div>								
 								</div>
 							</div>
@@ -378,16 +365,16 @@
 							<div class="product-image-wrapper">
 								<div class="single-products">
 									<div class="productinfo text-center">
-										<img src="images/home/gallery1.jpg" alt="" />
-										<h2>R$00,00</h2>
-										<p>Sou um Produto</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
+										<img src="images/animes/anime9.png" alt="" />
+										<h2>R$275,89</h2>
+										<p>KAKASHI</p>
+										<a href="fimcurso.html" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content">
-											<h2>R$00,00</h2>
-											<p>Sou um Produto</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
+											<h2>R$275,89</h2>
+											<p>KAKASHI</p>
+											<a href="fimcurso.html" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 										</div>
 									</div>
 								</div>								
@@ -419,16 +406,11 @@
 	<script src="js/price-range.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
 	<script src="js/main.js"></script>
-	<script>
-		//<![CDATA[
-		$(window).on('load', function () {
-		$('#preloader .inner').fadeOut();
-		$('#preloader').delay(350).fadeOut('slow'); 
-		$('body').delay(350).css({'overflow': 'visible'});
-		})
-		//]]>
+	<!--Função preloader-->
+	<script type="text/javascript">
+		jQuery(window).on('load', function(){
+			jQuery("#loader").delay(3000).fadeOut("slow");
+		});
 	</script>
-	
-
 </body>
 </html>
