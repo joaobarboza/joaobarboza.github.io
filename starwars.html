@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>STARWARS | PLAction</title>
+    <title>Home | PLAction</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/font-awesome.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/prettyPhoto.css" rel="stylesheet">
     <link href="css/price-range.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
-	<link href="css/main.css" rel="stylesheet">
-	<link href="css/responsive.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
@@ -22,23 +22,13 @@
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+	
 </head><!--/head-->
 
 <body>
-	 <!-- início do preloader -->
-	 <div id="preloader">
-        <div class="inner">
-           <!-- HTML DA ANIMAÇÃO MUITO LOUCA DO SEU PRELOADER! -->
-           <div class="bolas">
-              <div></div>
-              <div></div>
-              <div></div>                    
-           </div>
-        </div>
-    </div>
-	<!-- fim do preloader --> 
-	
+	<div id="loader"></div>
+	<div id="scroll"></div>
 	<header id="header"><!--header-->
 		<div class="header_top"><!--header_top-->
 			<div class="container">
@@ -54,8 +44,8 @@
 					<div class="col-sm-6">
 						<div class="social-icons pull-right">
 							<ul class="nav navbar-nav">
-								<li><a href="https://www.facebook.com/PLAction-104092714612125"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="https://www.instagram.com/plaction_oficial/"><i class="fa fa-instagram"></i></a></li>
+								<li><a href="https://www.facebook.com/PLAction-104092714612125"target="_blank"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="https://www.instagram.com/plaction_oficial/"target="_blank"><i class="fa fa-instagram"></i></a></li>
 							</ul>
 						</div>
 					</div>
@@ -100,7 +90,7 @@
 						</div>
 						<div class="mainmenu pull-left">
 							<ul class="nav navbar-nav collapse navbar-collapse">
-								<li><a href="index.html">Home</a></li>
+								<li><a href="index.html" >Home</a></li>
                                 </li> 
 								<li><a href="diferenciais.html">Diferenciais</a>
                                 </li> 
@@ -185,7 +175,7 @@
 						<div class="panel-group category-products" id="accordian"><!--category-productsr-->
 							<div class="panel panel-default">
 								<div class="panel-heading">
-									<h4 class="panel-title"><a href="marvel.html" >  MARVEL</a></h4>
+									<h4 class="panel-title"><a href="marvel.html">MARVEL</a></h4>
 								</div>
 							</div>
 							<div class="panel panel-default">
@@ -215,22 +205,22 @@
 				</div>
 				
 				<div class="col-sm-9 padding-right">
-					<div class="starwars"><!--starwars-->
-						<h2 class="title text-center">STARWARS</h2>
+					<div class="maisvendidos"><!--maisvendidos-->
+						<h2 class="title text-center">STAR WARS</h2>
 						<div class="col-sm-4">
 							<div class="product-image-wrapper">
 								<div class="single-products">
 										<div class="productinfo text-center">
-											<img src="images/home/gallery1.jpg" alt="" />
-											<h2>R$200,00</h2>
-											<p>Goku Clássico</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
+											<img src="images/starwars/st1.png" alt="" />
+											<h2>R$159,99</h2>
+											<p>CHIBI LUKE</p>
+											<a href="fimcurso.html" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 										</div>
 										<div class="product-overlay">
 											<div class="overlay-content">
-												<h2>R$200,00</h2>
-												<p>Goku Clássico</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
+												<h2>R$159,99</h2>
+												<p>CHIBI LUKE</p>
+												<a href="fimcurso.html" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 											</div>
 										</div>
 								</div>								
@@ -240,16 +230,16 @@
 							<div class="product-image-wrapper">
 								<div class="single-products">
 										<div class="productinfo text-center">
-											<img src="images/home/gallery1.jpg" alt="" />
-											<h2>R$200,00</h2>
-											<p>Goku Clássico</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
+											<img src="images/starwars/st2.png" alt="" />
+											<h2>R$499,99</h2>
+											<p>DARTH VADER</p>
+											<a href="fimcurso.html" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 										</div>
 										<div class="product-overlay">
 											<div class="overlay-content">
-												<h2>R$200,00</h2>
-												<p>Goku Clássico</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
+												<h2>R$499,99</h2>
+												<p>DARTH VADER</p>
+												<a href="fimcurso.html" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 											</div>
 										</div>
 								</div>								
@@ -259,16 +249,16 @@
 							<div class="product-image-wrapper">
 								<div class="single-products">
 										<div class="productinfo text-center">
-											<img src="images/home/gallery1.jpg" alt="" />
-											<h2>R$200,00</h2>
-											<p>Goku Clássico</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
+											<img src="images/starwars/st3.png" alt="" />
+											<h2>R$299,99</h2>
+											<p>BABY YODA</p>
+											<a href="fimcurso.html" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 										</div>
 										<div class="product-overlay">
 											<div class="overlay-content">
-												<h2>R$200,00</h2>
-												<p>Goku Clássico</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
+												<h2>R$299,99</h2>
+												<p>BABY YODA</p>
+												<a href="fimcurso.html" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 											</div>
 										</div>
 								</div>								
@@ -278,16 +268,16 @@
 							<div class="product-image-wrapper">
 								<div class="single-products">
 										<div class="productinfo text-center">
-											<img src="images/home/gallery1.jpg" alt="" />
-											<h2>R$00,00</h2>
-											<p>Sou um Produto</p>
+											<img src="images/starwars/st4.png" alt="" />
+											<h2>R$199,99</h2>
+											<p>CHEWBACCA</p>
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 										</div>
 										<div class="product-overlay">
 											<div class="overlay-content">
-												<h2>R$00,00</h2>
-												<p>Sou um Produto</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
+												<h2>R$199,99</h2>
+												<p>CHEWBACCA</p>
+												<a href="fimcurso.html" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 											</div>
 										</div>
 								</div>								
@@ -297,16 +287,16 @@
 							<div class="product-image-wrapper">
 								<div class="single-products">
 									<div class="productinfo text-center">
-										<img src="images/home/gallery1.jpg" alt="" />
-										<h2>R$00,00</h2>
-										<p>Sou um Produto</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
+										<img src="images/starwars/st5.png" alt="" />
+										<h2>R$485,99</h2>
+										<p>MANDALORIANO</p>
+										<a href="fimcurso.html" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content">
-											<h2>R$00,00</h2>
-											<p>Sou um Produto</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
+											<h2>R$485,99</h2>
+											<p>MANDALORIANO</p>
+											<a href="fimcurso.html" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 										</div>
 									</div>
 								</div>
@@ -317,16 +307,16 @@
 							<div class="product-image-wrapper">
 								<div class="single-products">
 									<div class="productinfo text-center">
-										<img src="images/home/gallery1.jpg" alt="" />
-										<h2>R$00,00</h2>
-										<p>Sou um Produto</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
+										<img src="images/starwars/st6.png" alt="" />
+										<h2>R$385,90</h2>
+										<p>STORMTROOPER</p>
+										<a href="fimcurso.html" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content">
-											<h2>R$00,00</h2>
-											<p>Sou um Produto</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
+											<h2>R$385,90</h2>
+											<p>STORMTROOPER</p>
+											<a href="fimcurso.html" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 										</div>
 									</div>
 								</div>
@@ -337,16 +327,16 @@
 							<div class="product-image-wrapper">
 								<div class="single-products">
 									<div class="productinfo text-center">
-										<img src="images/home/gallery1.jpg" alt="" />
-										<h2>R$00,00</h2>
-										<p>Sou um Produto</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
+										<img src="images/starwars/st7.png" alt="" />
+										<h2>R$300,00</h2>
+										<p>REY</p>
+										<a href="fimcurso.html" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content">
-											<h2>R$00,00</h2>
-											<p>Sou um Produto</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
+											<h2>R$300,00</h2>
+											<p>REY</p>
+											<a href="fimcurso.html" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 										</div>
 									</div>
 									<img src="images/home/new.png" class="new" alt="" />
@@ -357,16 +347,16 @@
 							<div class="product-image-wrapper">
 								<div class="single-products">
 									<div class="productinfo text-center">
-										<img src="images/home/gallery1.jpg" alt="" />
-										<h2>R$00,00</h2>
-										<p>Sou um Produto</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
+										<img src="images/starwars/st8.png" alt="" />
+										<h2>R$270,90</h2>
+										<p>MESTRE YODA</p>
+										<a href="fimcurso.html" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content">
-											<h2>R$00,00</h2>
-											<p>Sou um Produto</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
+											<h2>R$270,90</h2>
+											<p>MESTRE YODA</p>
+											<a href="fimcurso.html" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 										</div>
 									</div>
 									<img src="images/home/sale.png" class="new" alt="" />
@@ -378,22 +368,22 @@
 							<div class="product-image-wrapper">
 								<div class="single-products">
 									<div class="productinfo text-center">
-										<img src="images/home/gallery1.jpg" alt="" />
-										<h2>R$00,00</h2>
-										<p>Sou um Produto</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
+										<img src="images/starwars/st9.png" alt="" />
+										<h2>R$495,99</h2>
+										<p>KYLO REN</p>
+										<a href="fimcurso.html" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content">
-											<h2>R$00,00</h2>
-											<p>Sou um Produto</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
+											<h2>R$495,99</h2>
+											<p>KYLO REN</p>
+											<a href="fimcurso.html" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 										</div>
 									</div>
 								</div>								
 							</div>
 						</div>	
-					</div><!--MARVEL-->	
+					</div>	
 				</div>
 			</div>
 		</div>
@@ -419,14 +409,11 @@
 	<script src="js/price-range.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
 	<script src="js/main.js"></script>
-	<script>
-		//<![CDATA[
-		$(window).on('load', function () {
-		$('#preloader .inner').fadeOut();
-		$('#preloader').delay(350).fadeOut('slow'); 
-		$('body').delay(350).css({'overflow': 'visible'});
-		})
-		//]]>
+	<!--Função preloader-->
+	<script type="text/javascript">
+		jQuery(window).on('load', function(){
+			jQuery("#loader").delay(3000).fadeOut("slow");
+		});
 	</script>
 </body>
-</html>
+</html>	
