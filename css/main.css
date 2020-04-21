@@ -20,8 +20,9 @@
 *******Typography******
 **************************/
 body {
-    overflow: hidden; 
-  }
+    overflow: auto;
+    height: auto;
+}
 
 
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,700,100);
