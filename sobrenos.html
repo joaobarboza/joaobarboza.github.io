@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title> Sobre Nós | PLAction</title>
+	<title> Sobre Nós | PLAction</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/prettyPhoto.css" rel="stylesheet">
@@ -25,19 +26,8 @@
 </head><!--/head-->
 
 <body>
-	 <!-- início do preloader -->
-	 <div id="preloader">
-        <div class="inner">
-           <!-- HTML DA ANIMAÇÃO MUITO LOUCA DO SEU PRELOADER! -->
-           <div class="bolas">
-              <div></div>
-              <div></div>
-              <div></div>                    
-           </div>
-        </div>
-    </div>
-	<!-- fim do preloader --> 
-	
+	<div id="loader"></div>
+	<div id="scroll"></div>
     <header id="header"><!--header-->
 		<div class="header_top"><!--header_top-->
 			<div class="container">
@@ -179,7 +169,7 @@
 			<a href="index.html"><img src="" alt="" /></a>
 		</div>
 		<div class="content-404">
-			<img src="images/404/perfil.png" class="img-responsive" alt="" />
+			<img src="images/404/perfiljoao.png" class="img-responsive" alt="" />
 			<h1><b>JOÃO BARBOZA</b></h1>
 			<p>Futuro publicitário, modelador 3D, criativo, viciado em café, fanático por artes digitais e tecnologia em geral.<br>Sempre se aventurando em coisas novas dentro da área digital. </p>
 			<h2><a href="index.html">instagram</a></h2>
@@ -189,7 +179,7 @@
                 <a href="index.html"><img src="" alt="" /></a>
             </div>
             <div class="content-404">
-                <img src="images/404/perfil.png" class="img-responsive" alt="" />
+                <img src="images/404/perfilnicole.png" class="img-responsive" alt="" />
                 <h1><b>NICOLE</b></h1>
                 <p>Futura publicitária, criativa artesã. Gosta de tirar um som nas horas vagas.</p>
                 <h2><a href="index.html">instagram</a></h2>
@@ -200,7 +190,7 @@
                     <a href="index.html"><img src="" alt="" /></a>
                 </div>
                 <div class="content-404">
-                    <img src="images/404/perfil.png" class="img-responsive" alt="" />
+                    <img src="images/404/perfil luis.png" class="img-responsive" alt="" />
                     <h1><b>LUIS GUILHERME</b></h1>
                     <p>Futuro publicitário, barbeiro e podcaster nas horas vagas.</p>
                     <h2><a href="index.html">instagram</a></h2>
@@ -208,8 +198,6 @@
             </div>
         </div>
         <div>
-            <div class="content-404">
-                <h2><a href="processocriativo.html">PROCESSO CRIATIVO > </a></h2>
             </div>  
             <div class="content-404">
                 <h2><a href="index.html"></i> < HOME</i></a></a></h2>
@@ -221,7 +209,7 @@
 			<div class="container">
 				<div class="row">
 					<p class="pull-left">Copyright © 2020 A AGÊNCIA. Todos os direitos reservados.</p>
-					<p class="pull-right">Designed by <span><a target="_blank" href="o-lukinho-meu.png">João Barboza</a></span></p>
+					<p class="pull-right">Designed by <span><a target="_blank" href="https://www.instagram.com/cria_jao/">João Barboza</a></span></p>
 				</div>
 			</div>
 		</div>
@@ -235,14 +223,11 @@
 	<script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
 	<script src="js/main.js"></script>
-	<script>
-		//<![CDATA[
-		$(window).on('load', function () {
-		$('#preloader .inner').fadeOut();
-		$('#preloader').delay(350).fadeOut('slow'); 
-		$('body').delay(350).css({'overflow': 'visible'});
-		})
-		//]]>
+	<!--Função preloader-->
+	<script type="text/javascript">
+		jQuery(window).on('load', function(){
+			jQuery("#loader").delay(3000).fadeOut("slow");
+		});
 	</script>
 </body>
 </html>
